@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* NAVBAR STARTS HERE */
+
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.heading h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+/* for mobile */
+
+[class*="col-"] {
+  width: 100%;
+}
+
+.navbar {
+  background-color: #c5d5cb;
+  padding: 1% 7%;
+  text-align: center;
+}
+
+.navbar h1 {
+  color: black;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu a {
+  border-radius: 10px;
+  margin: 7px 0px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+.nav-menu a:hover {
+  background-color: white;
+}
+
+.logoimg {
+  max-width: 120px;
+  border-radius: 20;
+  opacity: 0.8;
+}
+
+.navbar::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* NAVBAR ENDS HERE */
+
+/* PROFILE STARTS HERE */
+
+.profile {
+  padding: 350px 20px;
+  position: relative;
+  text-align: center;
+}
+
+.profile .top-image {
+  position: absolute;
+  right: 60;
+  top: 20px;
+  transition: 1s;
+}
+
+.profile .top-image:hover {
+  transform: scaleY(0.9);
+}
+
+.profile .bottom-image {
+  position: absolute;
+  left: 60px;
+  bottom: 10px;
+  transition: 1s;
+  transform: rotateX();
+}
+
+.profile .bottom-image:hover {
+  transform: scaleY(0.9);
+}
+
+.profile-descripton h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 3rem;
+}
+
+.profile-descripton p {
+  color: gainsboro;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto 20px auto;
+}
+
+.profile::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* PROFILE ENDS HERE */
+
+/* ABOUT ME STARTS HERE  */
+
+.img {
+  width: 400px;
+  height: 400px;
+  padding: 30px;
+  transition: 1s;
+}
+
+.img:hover {
+  transform: scale(1.2);
+}
+
+.about-me2 {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  float: left;
+  background-color: #fdfbfb;
+}
+
+.about h1 {
+  text-align: center;
+}
+
+.hrcl {
+  width: 80px;
+  border: 1px solid rgb(24, 23, 22);
+}
+
+/* ABOUT ME ENDS HERE  */
+
+/* SKILLS STARTS  */
+
+.skill-heading {
+  text-align: center;
+}
+
+.skill-container {
+  background: #f5f7fa;
+}
+
+.skill-list {
+  padding: 20px;
+}
+
+.skill-list li {
+  list-style: none;
+  margin: 50px 0;
+  position: relative;
+  font-size: large;
+}
+
+.skill-list li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+
+  background-color: rgb(170, 167, 173);
+  width: 100%;
+  height: 25px;
+  border-radius: 1000px;
+}
+
+.skill-list li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+
+  background-color: rgb(15, 15, 15);
+
+  width: 0;
+  height: 25px;
+  border-radius: 1000px;
+
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: forward;
+}
+
+.skill-list li.html::after {
+  animation-name: html;
+}
+
+@keyframes html {
+  to {
+    width: 100%;
+  }
+}
+
+.skill-list li.css::after {
+  animation-name: css;
+}
+
+@keyframes css {
+  to {
+    width: 90%;
+  }
+}
+
+.skill-list li.javascript::after {
+  animation-name: javascript;
+}
+
+@keyframes javascript {
+  to {
+    width: 80%;
+  }
+}
+
+.skill-list li.react::after {
+  animation-name: javascript;
+}
+
+@keyframes react {
+  to {
+    width: 60%;
+  }
+}
+
+.skill-list li.java::after {
+  animation-name: java;
+}
+
+@keyframes java {
+  to {
+    width: 70%;
+  }
+}
+
+.skill-list li.mysql::after {
+  animation-name: mysql;
+}
+
+@keyframes mysql {
+  to {
+    width: 100%;
+  }
+}
+
+.skill-list li.c::after {
+  animation-name: c;
+}
+
+@keyframes c {
+  to {
+    width: 40%;
+  }
+}
+
+.hrcl2 {
+  width: 50px;
+
+  border: 1px solid rgb(24, 23, 22);
+}
+/* SKILLS ENDS  */
+
+/* CONTACT ME STARTS HERE */
+
+.contact-me {
+  /* background-color: antiquewhite; */
+  display: flex;
+  /* background: #fdfbfb; */
+  /* background-color: #f5f7fa; */
+  padding: 50px;
+}
+
+.description-contact .icon-fb {
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 50px;
+  margin: 10px;
+  width: 50px;
+  background-color: white;
+  color: blue;
+}
+
+.description-contact .icon-github {
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 50px;
+  margin: 10px;
+  width: 50px;
+  background-color: white;
+  color: black;
+}
+
+.description-contact .icon-mail {
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 50px;
+  margin: 10px;
+  width: 50px;
+  background-color: white;
+  color: red;
+}
+
+.des-image {
+  padding-left: 120px;
+  opacity: 0.8;
+  border-radius: 20%;
+  transition: 1s;
+}
+
+.des-image:hover {
+  transform: rotate(10deg);
+}
+
+.cont-h1 {
+  text-align: center;
+}
+
+.rhcl {
+  width: 50px;
+  border: 1px solid black;
+}
+
+.description-contact a {
+  padding: 30px;
+  transition: 1s;
+}
+
+.description-contact a:hover {
+  background-color: rgb(247, 241, 156);
+}
+
+/* CONTACT ME ENDS HERE */
+
+/* COPYRIGHT STARTS HERE */
+.copyright {
+  padding: 18px;
+  text-align: center;
+  height: 50px;
+  /* background-color: rgb(226, 235, 235); */
+  color: rgb(24, 26, 27);
+  margin: 0px 0px 10px 0px;
+}
+
+/* COPYRIGHT ENDS HERE */

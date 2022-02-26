@@ -1,0 +1,324 @@
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/* body {
+  margin: 0px 40px 0px 40px;
+} */
+
+/* NAVBAR STARTS HERE */
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.logo {
+  text-align: left;
+}
+
+.heading h1 {
+  text-align: right;
+}
+
+.navbar a {
+  background-color: transparent;
+}
+
+/* NAVBAR ENDS HERE */
+
+/* PROFILE STARTS HERE */
+
+.profile {
+  padding: 250px;
+}
+.profile .top-image {
+  position: absolute;
+  right: 80px;
+  top: 20px;
+  transition: 1s;
+}
+
+.profile .top-image:hover {
+  transform: scaleY(0.9);
+}
+
+.profile .bottom-image {
+  position: absolute;
+  right: 100px;
+  bottom: 20px;
+  transition: 1s;
+}
+
+.profile .bottom-image:hover {
+  transform: scaleY(0.9);
+}
+
+.profile p {
+  text-align: center;
+}
+
+.profile::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* PROFILE ENDS HERE */
+
+/* ABOUT ME STARTS HERE  */
+
+.img {
+  width: 800px;
+  height: 700px;
+  /* opacity: 0.8; */
+  padding-left: 200px;
+  transition: 1s;
+}
+
+.img:hover {
+  transform: scale(1.02);
+}
+.about {
+  padding-right: 300px;
+}
+
+/* ABOUT ME ENDS HERE  */
+
+/* SKILLS STARTS  */
+
+.skill-heading {
+  text-align: center;
+}
+
+.skill-container {
+  background: #f5f7fa;
+}
+
+.skill-list {
+  padding: 20px;
+}
+
+.skill-list li {
+  list-style: none;
+  margin: 50px 0;
+  position: relative;
+  font-size: large;
+}
+
+.skill-list li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+
+  background-color: rgb(170, 167, 173);
+  width: 50%;
+  height: 25px;
+  border-radius: 1000px;
+}
+
+.skill-list li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+
+  background-color: rgb(119, 113, 113);
+
+  width: 0;
+  height: 25px;
+  border-radius: 1000px;
+
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: forward;
+}
+
+.skill-list li.html::after {
+  animation-name: html;
+}
+
+@keyframes html {
+  to {
+    width: 50%;
+  }
+}
+
+.skill-list li.css::after {
+  animation-name: css;
+}
+
+@keyframes css {
+  to {
+    width: 45%;
+  }
+}
+
+.skill-list li.javascript::after {
+  animation-name: javascript;
+}
+
+@keyframes javascript {
+  to {
+    width: 40%;
+  }
+}
+
+.skill-list li.react::after {
+  animation-name: javascript;
+}
+
+@keyframes react {
+  to {
+    width: 35%;
+  }
+}
+
+.skill-list li.java::after {
+  animation-name: java;
+}
+
+@keyframes java {
+  to {
+    width: 38%;
+  }
+}
+
+.skill-list li.mysql::after {
+  animation-name: mysql;
+}
+
+@keyframes mysql {
+  to {
+    width: 50%;
+  }
+}
+
+.skill-list li.c::after {
+  animation-name: c;
+}
+
+@keyframes c {
+  to {
+    width: 25%;
+  }
+}
+
+.hrcl2 {
+  width: 50px;
+
+  border: 1px solid rgb(24, 23, 22);
+}
+
+/* SKILLS ENDS  */
+
+/* CONTACT ME STARTSS HERE */
+
+.contact-me {
+  background: #fdfbfb;
+  /* background-color: antiquewhite; */
+  display: flex;
+  /* background: #fdfbfb; */
+  /* background-color: #f5f7fa; */
+  padding: 50px;
+}
+
+.description-contact {
+  padding: 50px;
+}
+
+.description-contact a {
+  padding: 30px;
+  transition: 1s;
+}
+
+.description-contact a:hover {
+  background-color: rgb(247, 241, 156);
+}
+
+.description-contact .icon-fb {
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 50px;
+  margin: 10px;
+  width: 50px;
+  background-color: white;
+  color: blue;
+}
+
+.description-contact .icon-github {
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 50px;
+  margin: 10px;
+  width: 50px;
+  background-color: white;
+  color: black;
+}
+
+.description-contact .icon-mail {
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 50px;
+  margin: 10px;
+  width: 50px;
+  background-color: white;
+  color: red;
+}
+
+.des-image {
+  padding-left: 920px;
+  opacity: 0.8;
+  border-radius: 20%;
+  transition: 1s;
+}
+
+.cont-h1 {
+  text-align: center;
+}
+
+.rhcl {
+  width: 50px;
+  border: 1px solid black;
+}
+/* CONTACT ME ENDS HERE */
